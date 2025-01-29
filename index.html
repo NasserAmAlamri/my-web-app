@@ -4,106 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nasser Alamri - Network Engineer</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Header */
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-
-        .contact-bar {
-            background-color: #34495e;
-            padding: 1rem;
-            margin-top: 1rem;
-        }
-
-        .contact-bar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-
-        /* Sections */
-        section {
-            background-color: white;
-            margin: 2rem 0;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        /* Timeline */
-        .timeline-item {
-            display: grid;
-            grid-template-columns: 200px 1fr;
-            margin-bottom: 2rem;
-        }
-
-        /* Skills Grid */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .skill-card {
-            background-color: #f8f9fa;
-            padding: 1.5rem;
-            border-radius: 8px;
-        }
-
-        /* Certifications */
-        .certifications {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .cert-badge {
-            background-color: #3498db;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .timeline-item {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -125,16 +27,18 @@
     </header>
 
     <main class="container">
+        <!-- Profile Section -->
         <section id="profile">
             <h2>Profile</h2>
             <p>Highly motivated senior student pursuing a degree in Computer Engineering with a strong foundation in network design, analysis, and cybersecurity. Seeking an opportunity to leverage my skills and gain practical experience in a professional setting.</p>
         </section>
 
+        <!-- Education Section -->
         <section id="education">
             <h2>Education</h2>
             <div class="timeline-item">
-                <div>2019/08 – Present</div>
-                <div>
+                <div class="timeline-date">2019/08 – Present</div>
+                <div class="timeline-content">
                     <h3>King Fahd University of Petroleum and Minerals</h3>
                     <p>Bachelor’s degree in Computer Engineering</p>
                     <p>GPA: 3.18/4 (Third Honor)</p>
@@ -147,67 +51,9 @@
             </div>
         </section>
 
-        <section id="experience">
-            <h2>Professional Experience</h2>
-            <div class="timeline-item">
-                <div>2024/07</div>
-                <div>
-                    <h3>National Cybersecurity Academy</h3>
-                    <p>Cybersecurity Bootcamp (120-hour intensive program)</p>
-                    <ul>
-                        <li>Network revision and Security+ material</li>
-                        <li>Hands-on labs and CTF challenges</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <!-- Add other experiences following same pattern -->
-        </section>
-
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Technical</h3>
-                    <ul>
-                        <li>Wireshark & Packet Tracer</li>
-                        <li>Kali Linux Tools</li>
-                        <li>Python, Java, JavaFX</li>
-                        <li>AWS Cloud Computing</li>
-                    </ul>
-                </div>
-                
-                <div class="skill-card">
-                    <h3>Professional</h3>
-                    <ul>
-                        <li>Team Leadership</li>
-                        <li>Time Management</li>
-                        <li>Problem Solving</li>
-                        <li>Technical Documentation</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="certifications">
-            <h2>Certifications</h2>
-            <div class="certifications">
-                <span class="cert-badge">Security+</span>
-                <span class="cert-badge">Network+</span>
-            </div>
-        </section>
+        <!-- Add other sections similarly -->
     </main>
 
-    <script>
-        // Simple smooth scroll functionality
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
