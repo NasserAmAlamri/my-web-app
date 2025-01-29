@@ -1,103 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Care Services</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasser Alamri - Network Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .contact-bar {
+            background-color: #34495e;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .contact-bar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        /* Sections */
+        section {
+            background-color: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Timeline */
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            margin-bottom: 2rem;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-card {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        /* Certifications */
+        .certifications {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .cert-badge {
+            background-color: #3498db;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .timeline-item {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <div class="logo">
-        <h1>NorHomeCare</h1>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="cta">
-        <a href="#contact" class="btn">Get Started</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="container">
-      <h2>Compassionate Home Care Services</h2>
-      <p>Providing personalized care for your loved ones in the comfort of their home.</p>
-      <a href="#services" class="btn">Learn More</a>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="services">
-    <div class="container">
-      <h2>Our Services</h2>
-      <div class="service-list">
-        <div class="service-item">
-          <i class="fas fa-heartbeat"></i>
-          <h3>Personal Care</h3>
-          <p>Assistance with daily activities like bathing, dressing, and grooming.</p>
+    <header>
+        <div class="container">
+            <h1>Nasser Alamri</h1>
+            <p>Network Engineer</p>
+            <div class="contact-bar">
+                <a href="mailto:Nasser.amer.alamri@gmail.com">
+                    <i class="fas fa-envelope"></i> Nasser.amer.alamri@gmail.com
+                </a>
+                <a href="tel:+966560907329">
+                    <i class="fas fa-phone"></i> +966560907329
+                </a>
+                <a href="https://linkedin.com/in/nasser-alamri" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
         </div>
-        <div class="service-item">
-          <i class="fas fa-hand-holding-heart"></i>
-          <h3>Companionship</h3>
-          <p>Emotional support and companionship to reduce loneliness.</p>
-        </div>
-        <div class="service-item">
-          <i class="fas fa-stethoscope"></i>
-          <h3>Medical Care</h3>
-          <p>Skilled nursing and medical care at home.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- About Us Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>We are a dedicated team of caregivers committed to providing high-quality home care services. Our mission is to ensure the well-being and comfort of our clients.</p>
-      <a href="#contact" class="btn">Contact Us</a>
-    </div>
-  </section>
+    <main class="container">
+        <section id="profile">
+            <h2>Profile</h2>
+            <p>Highly motivated senior student pursuing a degree in Computer Engineering with a strong foundation in network design, analysis, and cybersecurity. Seeking an opportunity to leverage my skills and gain practical experience in a professional setting.</p>
+        </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <form action="#" method="post">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
-  </section>
+        <section id="education">
+            <h2>Education</h2>
+            <div class="timeline-item">
+                <div>2019/08 – Present</div>
+                <div>
+                    <h3>King Fahd University of Petroleum and Minerals</h3>
+                    <p>Bachelor’s degree in Computer Engineering</p>
+                    <p>GPA: 3.18/4 (Third Honor)</p>
+                    <ul>
+                        <li>Computer Networks</li>
+                        <li>Internetwork Design and Management</li>
+                        <li>Computer & Network Security</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 NorHomeCare. All rights reserved.</p>
-      <div class="social-links">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
-  </footer>
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <div class="timeline-item">
+                <div>2024/07</div>
+                <div>
+                    <h3>National Cybersecurity Academy</h3>
+                    <p>Cybersecurity Bootcamp (120-hour intensive program)</p>
+                    <ul>
+                        <li>Network revision and Security+ material</li>
+                        <li>Hands-on labs and CTF challenges</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Add other experiences following same pattern -->
+        </section>
 
-  <script src="script.js"></script>
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Technical</h3>
+                    <ul>
+                        <li>Wireshark & Packet Tracer</li>
+                        <li>Kali Linux Tools</li>
+                        <li>Python, Java, JavaFX</li>
+                        <li>AWS Cloud Computing</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card">
+                    <h3>Professional</h3>
+                    <ul>
+                        <li>Team Leadership</li>
+                        <li>Time Management</li>
+                        <li>Problem Solving</li>
+                        <li>Technical Documentation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="certifications">
+                <span class="cert-badge">Security+</span>
+                <span class="cert-badge">Network+</span>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Simple smooth scroll functionality
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
-
 </html>
